@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hub Link Maker</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Hub Link Maker</h1>
+      <p class="lede">
+        Combine a GitHub notebook URL with a JupyterHub fancy-forms permalink
+        into a single URL with the profile / environment + notebook to load on startup.
+      </p>
+
+      <form id="form">
+        <label for="notebook">
+          GitHub notebook URL
+          <small>e.g. https://github.com/owner/repo/blob/main/path/to/nb.ipynb</small>
+        </label>
+        <input
+          id="notebook"
+          name="notebook"
+          type="url"
+          required
+          placeholder="https://github.com/.../blob/main/.../notebook.ipynb"
+          autocomplete="off"
+          spellcheck="false"
+        />
+
+        <label for="permalink">
+          Hub permalink
+          <small>copied from the JupyterHub fancy-forms profile page</small>
+        </label>
+        <input
+          id="permalink"
+          name="permalink"
+          type="url"
+          required
+          placeholder="https://staging.hub.example.cloud/hub/login?next=/hub/spawn%23fancy-forms-config=..."
+          autocomplete="off"
+          spellcheck="false"
+        />
+
+        <button type="submit">Generate link</button>
+      </form>
+
+      <section id="output" hidden>
+        <label for="result">Generated URL</label>
+        <textarea id="result" readonly rows="6"></textarea>
+        <div class="actions">
+          <button type="button" id="copy">Copy</button>
+          <a id="open" href="#" target="_blank" rel="noopener noreferrer">
+            Open in new tab
+          </a>
+        </div>
+      </section>
+
+      <p id="error" class="error" hidden></p>
+    </main>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+[
+  {
+    "label": "original_example",
+    "notebookUrl": "https://github.com/NASA-IMPACT/veda-docs/blob/main/user-guide/notebooks/stories/tornadoes_2024_notebook.ipynb",
+    "permalink": "https://staging.hub.openveda.cloud/hub/login?next=/hub/spawn%23fancy-forms-config=%7B%22profile%22%3A%22choose-your-environment-and-resources%22%2C%22resource_allocation%22%3A%22mem_4_gb%22%2C%22resource_allocation%3Aunlisted_choice%22%3A%22%22%2C%22autoStart%22%3A%22true%22%7D",
+    "expected": "https://staging.hub.openveda.cloud/hub/login?next=%2Fhub%2Fspawn%3Fnext%3D%252Fhub%252Fuser-redirect%252Fgit-pull%253Frepo%253Dhttps%253A%252F%252Fgithub.com%252FNASA-IMPACT%252Fveda-docs%2526branch%253Dmain%2526urlpath%253Dlab%252Ftree%252Fveda-docs%252Fuser-guide%252Fnotebooks%252Fstories%252Ftornadoes_2024_notebook.ipynb%23fancy-forms-config=%7B%22profile%22%3A%22choose-your-environment-and-resources%22%2C%22resource_allocation%22%3A%22mem_4_gb%22%2C%22resource_allocation%3Aunlisted_choice%22%3A%22%22%2C%22autoStart%22%3A%22true%22%7D"
+  },
+  {
+    "label": "autostart_false_gets_flipped",
+    "notebookUrl": "https://github.com/NASA-IMPACT/veda-docs/blob/main/user-guide/notebooks/stories/tornadoes_2024_notebook.ipynb",
+    "permalink": "https://staging.hub.openveda.cloud/hub/login?next=/hub/spawn%23fancy-forms-config=%7B%22profile%22%3A%22choose-your-environment-and-resources%22%2C%22resource_allocation%22%3A%22mem_4_gb%22%2C%22resource_allocation%3Aunlisted_choice%22%3A%22%22%2C%22autoStart%22%3A%22false%22%7D",
+    "expected": "https://staging.hub.openveda.cloud/hub/login?next=%2Fhub%2Fspawn%3Fnext%3D%252Fhub%252Fuser-redirect%252Fgit-pull%253Frepo%253Dhttps%253A%252F%252Fgithub.com%252FNASA-IMPACT%252Fveda-docs%2526branch%253Dmain%2526urlpath%253Dlab%252Ftree%252Fveda-docs%252Fuser-guide%252Fnotebooks%252Fstories%252Ftornadoes_2024_notebook.ipynb%23fancy-forms-config=%7B%22profile%22%3A%22choose-your-environment-and-resources%22%2C%22resource_allocation%22%3A%22mem_4_gb%22%2C%22resource_allocation%3Aunlisted_choice%22%3A%22%22%2C%22autoStart%22%3A%22true%22%7D"
+  },
+  {
+    "label": "production_host",
+    "notebookUrl": "https://github.com/NASA-IMPACT/veda-docs/blob/main/user-guide/notebooks/stories/tornadoes_2024_notebook.ipynb",
+    "permalink": "https://hub.openveda.cloud/hub/login?next=/hub/spawn%23fancy-forms-config=%7B%22profile%22%3A%22choose-your-environment-and-resources%22%2C%22resource_allocation%22%3A%22mem_8_gb%22%2C%22autoStart%22%3A%22true%22%7D",
+    "expected": "https://hub.openveda.cloud/hub/login?next=%2Fhub%2Fspawn%3Fnext%3D%252Fhub%252Fuser-redirect%252Fgit-pull%253Frepo%253Dhttps%253A%252F%252Fgithub.com%252FNASA-IMPACT%252Fveda-docs%2526branch%253Dmain%2526urlpath%253Dlab%252Ftree%252Fveda-docs%252Fuser-guide%252Fnotebooks%252Fstories%252Ftornadoes_2024_notebook.ipynb%23fancy-forms-config=%7B%22profile%22%3A%22choose-your-environment-and-resources%22%2C%22resource_allocation%22%3A%22mem_8_gb%22%2C%22autoStart%22%3A%22true%22%7D"
+  },
+  {
+    "label": "notebook_at_repo_root",
+    "notebookUrl": "https://github.com/owner/repo/blob/main/notebook.ipynb",
+    "permalink": "https://staging.hub.openveda.cloud/hub/login?next=/hub/spawn%23fancy-forms-config=%7B%22profile%22%3A%22tiny%22%2C%22autoStart%22%3A%22true%22%7D",
+    "expected": "https://staging.hub.openveda.cloud/hub/login?next=%2Fhub%2Fspawn%3Fnext%3D%252Fhub%252Fuser-redirect%252Fgit-pull%253Frepo%253Dhttps%253A%252F%252Fgithub.com%252Fowner%252Frepo%2526branch%253Dmain%2526urlpath%253Dlab%252Ftree%252Frepo%252Fnotebook.ipynb%23fancy-forms-config=%7B%22profile%22%3A%22tiny%22%2C%22autoStart%22%3A%22true%22%7D"
+  },
+  {
+    "label": "non_main_branch",
+    "notebookUrl": "https://github.com/owner/repo/blob/develop/path/to/notebook.ipynb",
+    "permalink": "https://staging.hub.openveda.cloud/hub/login?next=/hub/spawn%23fancy-forms-config=%7B%22profile%22%3A%22small%22%2C%22autoStart%22%3A%22false%22%7D",
+    "expected": "https://staging.hub.openveda.cloud/hub/login?next=%2Fhub%2Fspawn%3Fnext%3D%252Fhub%252Fuser-redirect%252Fgit-pull%253Frepo%253Dhttps%253A%252F%252Fgithub.com%252Fowner%252Frepo%2526branch%253Ddevelop%2526urlpath%253Dlab%252Ftree%252Frepo%252Fpath%252Fto%252Fnotebook.ipynb%23fancy-forms-config=%7B%22profile%22%3A%22small%22%2C%22autoStart%22%3A%22true%22%7D"
+  }
+]
